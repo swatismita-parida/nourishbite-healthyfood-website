@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu — NourishBite</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="menu">
+  <div class="site-fruits" aria-hidden="true">
+    <img class="site-fruit s" src="assets/fruit-strawberry.png" alt="">
+    <img class="site-fruit b" src="assets/fruit-blueberries.png" alt="">
+    <img class="site-fruit k" src="assets/fruit-kiwi.png" alt="">
+    <img class="site-fruit o" src="assets/fruit-orange.png" alt="">
+  </div>
+
+  <header class="nav">
+    <a class="brand" href="index.html"><img src="assets/logo-heart-new.png" alt="NourishBite logo"><span>NOURISHBITE</span></a>
+    <nav class="links" id="links">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="categories.html">Categories</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="navright">
+      <a class="cart" href="cart.html">🛒<b id="count">0</b></a>
+      <a class="btn green" href="menu.html">Order Now</a>
+      <button class="hamb" id="hamb">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page">
+      <div class="eyebrow">THE MENU</div>
+      <h1>Eat Well. <em>Choose What You Love.</em></h1>
+      <p>Browse, search and customize selected food items before adding them to your cart.</p>
+    </section>
+
+    <div class="filtersbar">
+      <div class="filters" id="filters">
+        <button class="active" data-cat="All">All</button>
+        <button data-cat="Breakfast">Breakfast</button>
+        <button data-cat="Bowls">Bowls</button>
+        <button data-cat="Toasts">Toasts</button>
+        <button data-cat="Fruit">Fruit</button>
+        <button data-cat="Smoothies">Smoothies</button>
+        <button data-cat="Snacks">Snacks</button>
+        <button data-cat="Wraps">Wraps</button>
+      </div>
+      <div class="search">
+        <input id="search" placeholder="Search food…">
+        <select id="sort">
+          <option value="popular">Popular</option>
+          <option value="low">Price: Low to High</option>
+          <option value="high">Price: High to Low</option>
+        </select>
+      </div>
+    </div>
+
+    <section class="section" style="padding-top:30px">
+      <div class="foods" id="menuFoods"></div>
+    </section>
+
+    <!-- ========== REVIEWS SECTION ========== -->
+    <section class="review-section">
+      <div class="review-header">
+        <div class="eyebrow">CUSTOMER LOVE</div>
+        <h2>What people are saying.</h2>
+        <p>Real reviews from our NourishBite community.</p>
+      </div>
+
+      <!-- Stats -->
+      <div class="review-stats">
+        <div class="review-stat">
+          <div class="stat-number">4.8</div>
+          <div class="stat-stars">★★★★★</div>
+          <div class="stat-label">Average Rating</div>
+        </div>
+        <div class="review-stat">
+          <div class="stat-number">2,340+</div>
+          <div class="stat-label">Happy Customers</div>
+        </div>
+        <div class="review-stat">
+          <div class="stat-number">98%</div>
+          <div class="stat-label">Would Recommend</div>
+        </div>
+      </div>
+
+      <!-- Layout: Form + List -->
+      <div class="review-layout">
+        <div class="review-form-wrap">
+          <h3>Leave a Review</h3>
+          <form id="reviewForm">
+            <label>Your Name
+              <input name="name" required placeholder="e.g. Priya S.">
+            </label>
+
+            <label>Rating
+              <div class="star-rating" id="starRating">
+                <i class="fas fa-star" data-value="1"></i>
+                <i class="fas fa-star" data-value="2"></i>
+                <i class="fas fa-star" data-value="3"></i>
+                <i class="fas fa-star" data-value="4"></i>
+                <i class="fas fa-star" data-value="5"></i>
+              </div>
+            </label>
+
+            <label>Your Review
+              <textarea name="text" required placeholder="Tell us what you loved..." rows="3"></textarea>
+            </label>
+
+            <button class="btn green" style="width:100%">Post Review</button>
+          </form>
+        </div>
+
+        <div class="review-list-wrap">
+          <h3>Recent Reviews</h3>
+          <div id="reviewList" class="review-list"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footgrid">
+      <div>
+        <a class="brand footerbrand" href="index.html"><img src="assets/logo-heart-new.png" alt=""><span>NOURISHBITE</span></a>
+        <p>Healthy Can Be Tasty & Affordable Too.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="categories.html">Categories</a>
+        <a href="about.html">About</a>
+      </div>
+      <div>
+        <h4>Categories</h4>
+        <a href="menu.html?cat=Breakfast">Breakfast</a>
+        <a href="menu.html?cat=Bowls">Bowls</a>
+        <a href="menu.html?cat=Smoothies">Smoothies</a>
+        <a href="menu.html?cat=Snacks">Snacks</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="contact.html">Contact Us</a>
+        <a href="mailto:hello@nourishbite.demo">hello@nourishbite.demo</a>
+        <div class="socials">
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="https://wa.me/919999999999" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">© 2026 NourishBite. Demo concept website.</div>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+  <script src="js/app.js"></script>
+</body>
+</html>

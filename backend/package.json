@@ -1,0 +1,18 @@
+{
+  "name": "nourishbite",
+  "version": "1.0.0",
+  "description": "NourishBite — Healthy food ordering demo",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": ["food", "healthy", "ordering", "demo"],
+  "author": "NourishBite Demo",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "mongodb": "^6.3.0",
+    "nodemailer": "^6.9.7"
+  }
+}

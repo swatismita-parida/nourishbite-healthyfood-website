@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Food Details — NourishBite</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="detail">
+  <div class="site-fruits" aria-hidden="true">
+    <img class="site-fruit s" src="assets/fruit-strawberry.png" alt="">
+    <img class="site-fruit b" src="assets/fruit-blueberries.png" alt="">
+    <img class="site-fruit k" src="assets/fruit-kiwi.png" alt="">
+    <img class="site-fruit o" src="assets/fruit-orange.png" alt="">
+  </div>
+
+  <header class="nav">
+    <a class="brand" href="index.html"><img src="assets/logo-heart-new.png" alt="NourishBite logo"><span>NOURISHBITE</span></a>
+    <nav class="links" id="links">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="categories.html">Categories</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="navright">
+      <a class="cart" href="cart.html">🛒<b id="count">0</b></a>
+      <a class="btn green" href="menu.html">Order Now</a>
+      <button class="hamb" id="hamb">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section detail">
+      <div class="detailimg" id="detailImg">
+        <img id="detailPhoto" class="foodPhoto" alt="Food item">
+      </div>
+      <div>
+        <div class="eyebrow" id="cat"></div>
+        <h1 id="name"></h1>
+        <div class="rating">★★★★★ 4.8</div>
+        <p id="desc"></p>
+        <div class="nutrition" id="nutrition"></div>
+        <div class="option">
+          <h4>Size</h4>
+          <div class="options">
+            <button class="opt selected" data-extra="0">Regular</button>
+            <button class="opt" data-extra="30">Large +₹30</button>
+          </div>
+        </div>
+        <div class="option">
+          <h4>Base</h4>
+          <div class="options">
+            <button class="opt selected" data-extra="0">Classic</button>
+            <button class="opt" data-extra="20">Greek Yogurt +₹20</button>
+            <button class="opt" data-extra="15">Oat Milk +₹15</button>
+          </div>
+        </div>
+        <div class="option">
+          <h4>Sweetness</h4>
+          <div class="options">
+            <button class="opt selected">Light</button>
+            <button class="opt">Regular</button>
+            <button class="opt">More</button>
+          </div>
+        </div>
+        <div class="option">
+          <h4>Add-ons</h4>
+          <label class="addon"><span><input class="extra" type="checkbox" data-extra="30"> Extra Granola</span><b>+₹30</b></label>
+          <label class="addon"><span><input class="extra" type="checkbox" data-extra="20"> Extra Banana</span><b>+₹20</b></label>
+          <label class="addon"><span><input class="extra" type="checkbox" data-extra="20"> Extra Seeds</span><b>+₹20</b></label>
+        </div>
+        <div class="priceRow">
+          <div class="qty">
+            <button id="minus">−</button>
+            <span id="qty">1</span>
+            <button id="plus">+</button>
+          </div>
+          <strong id="price">₹0</strong>
+          <button class="btn green" id="add">Add to Cart</button>
+        </div>
+        <h3>Ingredients</h3>
+        <div class="ingredients" id="ingredients"></div>
+        <div class="foodnote">
+          💡 <b>Food Note</b><br>
+          Ingredients and nutrition values may vary depending on portion size and preparation. Check ingredients carefully for allergies or dietary restrictions.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footgrid">
+      <div>
+        <a class="brand footerbrand" href="index.html"><img src="assets/logo-heart-new.png" alt=""><span>NOURISHBITE</span></a>
+        <p>Healthy Can Be Tasty & Affordable Too.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="categories.html">Categories</a>
+        <a href="about.html">About</a>
+      </div>
+      <div>
+        <h4>Categories</h4>
+        <a href="menu.html?cat=Breakfast">Breakfast</a>
+        <a href="menu.html?cat=Bowls">Bowls</a>
+        <a href="menu.html?cat=Smoothies">Smoothies</a>
+        <a href="menu.html?cat=Snacks">Snacks</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="contact.html">Contact Us</a>
+        <a href="mailto:hello@nourishbite.demo">hello@nourishbite.demo</a>
+        <div class="socials">
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="https://wa.me/919999999999" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">© 2026 NourishBite. Demo concept website.</div>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+  <script src="js/app.js"></script>
+</body>
+</html>

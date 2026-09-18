@@ -1,0 +1,35 @@
+[
+  {
+    "customer": {
+      "name": "Swatismita Parida",
+      "phone": "9178291410",
+      "email": "swatismitaparida555@gmail.com",
+      "city": "bhubaneswar",
+      "address": "infocity",
+      "pincode": "752104",
+      "payment": "COD"
+    },
+    "items": [
+      {
+        "key": 1789740940240,
+        "id": 1,
+        "name": "Berry Protein Bowl",
+        "price": 189,
+        "qty": 1,
+        "img": "Protein",
+        "custom": {}
+      },
+      {
+        "key": 1789740942253,
+        "id": 2,
+        "name": "Avocado Egg Toast",
+        "price": 169,
+        "qty": 1,
+        "img": "Balanced",
+        "custom": {}
+      }
+    ],
+    "total": 388,
+    "createdAt": "2026-09-18T14:45:26.559Z"
+  }
+]
